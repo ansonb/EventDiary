@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.eventdiary_v2.EventDiary" >
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username_hint" />
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pass_hint" 
+        android:password="true"/>
+    <EditText
+        android:id="@+id/editTextConPass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/conpass_hint" 
+        android:password="true"/>
+    
+    <Button 
+        android:id="@+id/loginButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Login"
+        android:onClick="loginPressed"/>
+    
+    <Button 
+        android:id="@+id/regButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Register"
+        android:onClick="registerPressed"/>"
+    
+
+</LinearLayout>

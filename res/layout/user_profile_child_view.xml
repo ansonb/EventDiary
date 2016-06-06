@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/childDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:text="date"
+        />
+    
+    
+    
+    <TextView 
+        android:id="@+id/childBE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:text="BE"
+        android:textColor="#ff0000"
+        />
+    
+    <TextView
+        android:id="@+id/childGE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_toLeftOf="@id/childBE"
+        android:text="GE" 
+        android:textColor="#00ff00"
+        />
+
+    <TextView
+        android:id="@+id/childEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/childDate"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:text="Event" />
+
+    <Button
+        android:id="@+id/bookmark"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20dip"
+        android:layout_height="30dip"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/childGE"
+        android:layout_marginRight="10dip"
+        android:background="@android:color/black"
+        android:onClick="bookmarkToggle"
+        android:focusable="false"/>
+    
+</RelativeLayout>

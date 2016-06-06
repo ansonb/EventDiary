@@ -1,0 +1,55 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.eventdiary.EventDiary" >
+
+    <item android:id="@+id/action_search"
+          android:icon="@drawable/search"
+          android:title="Search"
+          android:showAsAction="ifRoom"/>
+    
+    <item android:id="@+id/action_add"
+          android:icon="@drawable/add"
+          android:title="Add"
+          android:showAsAction="ifRoom" />
+     
+    <item android:id="@+id/action_show_bookmark"
+          android:title="Show Bookmarks"
+          android:showAsAction="never" 
+        />
+    
+    <item android:id="@+id/action_logOut"
+          android:title="Log Out"
+          android:showAsAction="never"/>
+    
+    
+    <item android:id="@+id/action_delete"
+          android:icon="@drawable/delete"
+          android:title="Delete"
+          android:showAsAction="ifRoom" />
+     
+    <item android:id="@+id/action_forward"
+          android:icon="@drawable/ic_forward_black_36dp"
+          android:title="Go"
+          android:showAsAction="ifRoom"/>
+    
+    <item android:id="@+id/action_cancel"
+          android:icon="@drawable/ic_close_black_36dp"
+          android:title="Cancel"
+          android:showAsAction="ifRoom"/>
+      
+    
+    <item android:id="@+id/action_back_to_all"
+          android:title="Back"
+          android:showAsAction="ifRoom" />
+    
+    <item android:id="@+id/action_export"
+          android:title="Export"
+          android:showAsAction="never" />
+    
+    <item android:id="@+id/action_import"
+          android:title="Import"
+          android:showAsAction="never" />
+    
+
+</menu>

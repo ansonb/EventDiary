@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/textView1"
+        android:layout_width="100dp"
+        android:layout_height="300dp"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignRight="@+id/date"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Enter an Event" 
+        android:gravity="top"/>
+
+    <EditText
+        android:id="@+id/goodevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/date"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="14dp"
+        android:textColor="#00ff00"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/badevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/goodevent"
+        android:layout_alignBottom="@+id/goodevent"
+        android:layout_alignTop="@id/goodevent"
+        android:layout_alignRight="@+id/date"
+        android:textColor="#ff0000"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="250dip"
+        android:layout_height="30dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="dd/mm/yyyy   "
+        android:textSize="15dip" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/done"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/date"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>
